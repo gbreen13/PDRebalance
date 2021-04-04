@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26FC9AF6261A562E00B7E115 /* PD_RebalanceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FC9AF5261A562E00B7E115 /* PD_RebalanceApp.swift */; };
+		26FC9AF8261A562E00B7E115 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FC9AF7261A562E00B7E115 /* ContentView.swift */; };
+		26FC9AFA261A562F00B7E115 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26FC9AF9261A562F00B7E115 /* Assets.xcassets */; };
+		26FC9AFD261A562F00B7E115 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26FC9AFC261A562F00B7E115 /* Preview Assets.xcassets */; };
+		26FC9B09261A562F00B7E115 /* PD_RebalanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FC9B08261A562F00B7E115 /* PD_RebalanceTests.swift */; };
+		26FC9B14261A563000B7E115 /* PD_RebalanceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FC9B13261A563000B7E115 /* PD_RebalanceUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		26FC9B05261A562F00B7E115 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26FC9AEA261A562E00B7E115 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26FC9AF1261A562E00B7E115;
+			remoteInfo = "PD Rebalance";
+		};
+		26FC9B10261A563000B7E115 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26FC9AEA261A562E00B7E115 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26FC9AF1261A562E00B7E115;
+			remoteInfo = "PD Rebalance";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		26FC9AF2261A562E00B7E115 /* PD Rebalance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PD Rebalance.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26FC9AF5261A562E00B7E115 /* PD_RebalanceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PD_RebalanceApp.swift; sourceTree = "<group>"; };
+		26FC9AF7261A562E00B7E115 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		26FC9AF9261A562F00B7E115 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		26FC9AFC261A562F00B7E115 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		26FC9AFE261A562F00B7E115 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26FC9AFF261A562F00B7E115 /* PD_Rebalance.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PD_Rebalance.entitlements; sourceTree = "<group>"; };
+		26FC9B04261A562F00B7E115 /* PD RebalanceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PD RebalanceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26FC9B08261A562F00B7E115 /* PD_RebalanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PD_RebalanceTests.swift; sourceTree = "<group>"; };
+		26FC9B0A261A562F00B7E115 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26FC9B0F261A563000B7E115 /* PD RebalanceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "PD RebalanceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26FC9B13261A563000B7E115 /* PD_RebalanceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PD_RebalanceUITests.swift; sourceTree = "<group>"; };
+		26FC9B15261A563000B7E115 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26FC9AEF261A562E00B7E115 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26FC9B01261A562F00B7E115 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26FC9B0C261A563000B7E115 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26FC9AE9261A562E00B7E115 = {
+			isa = PBXGroup;
+			children = (
+				26FC9AF4261A562E00B7E115 /* PD Rebalance */,
+				26FC9B07261A562F00B7E115 /* PD RebalanceTests */,
+				26FC9B12261A563000B7E115 /* PD RebalanceUITests */,
+				26FC9AF3261A562E00B7E115 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		26FC9AF3261A562E00B7E115 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26FC9AF2261A562E00B7E115 /* PD Rebalance.app */,
+				26FC9B04261A562F00B7E115 /* PD RebalanceTests.xctest */,
+				26FC9B0F261A563000B7E115 /* PD RebalanceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26FC9AF4261A562E00B7E115 /* PD Rebalance */ = {
+			isa = PBXGroup;
+			children = (
+				26FC9AF5261A562E00B7E115 /* PD_RebalanceApp.swift */,
+				26FC9AF7261A562E00B7E115 /* ContentView.swift */,
+				26FC9AF9261A562F00B7E115 /* Assets.xcassets */,
+				26FC9AFE261A562F00B7E115 /* Info.plist */,
+				26FC9AFF261A562F00B7E115 /* PD_Rebalance.entitlements */,
+				26FC9AFB261A562F00B7E115 /* Preview Content */,
+			);
+			path = "PD Rebalance";
+			sourceTree = "<group>";
+		};
+		26FC9AFB261A562F00B7E115 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				26FC9AFC261A562F00B7E115 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		26FC9B07261A562F00B7E115 /* PD RebalanceTests */ = {
+			isa = PBXGroup;
+			children = (
+				26FC9B08261A562F00B7E115 /* PD_RebalanceTests.swift */,
+				26FC9B0A261A562F00B7E115 /* Info.plist */,
+			);
+			path = "PD RebalanceTests";
+			sourceTree = "<group>";
+		};
+		26FC9B12261A563000B7E115 /* PD RebalanceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				26FC9B13261A563000B7E115 /* PD_RebalanceUITests.swift */,
+				26FC9B15261A563000B7E115 /* Info.plist */,
+			);
+			path = "PD RebalanceUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		26FC9AF1261A562E00B7E115 /* PD Rebalance */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26FC9B18261A563000B7E115 /* Build configuration list for PBXNativeTarget "PD Rebalance" */;
+			buildPhases = (
+				26FC9AEE261A562E00B7E115 /* Sources */,
+				26FC9AEF261A562E00B7E115 /* Frameworks */,
+				26FC9AF0261A562E00B7E115 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PD Rebalance";
+			productName = "PD Rebalance";
+			productReference = 26FC9AF2261A562E00B7E115 /* PD Rebalance.app */;
+			productType = "com.apple.product-type.application";
+		};
+		26FC9B03261A562F00B7E115 /* PD RebalanceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26FC9B1B261A563000B7E115 /* Build configuration list for PBXNativeTarget "PD RebalanceTests" */;
+			buildPhases = (
+				26FC9B00261A562F00B7E115 /* Sources */,
+				26FC9B01261A562F00B7E115 /* Frameworks */,
+				26FC9B02261A562F00B7E115 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26FC9B06261A562F00B7E115 /* PBXTargetDependency */,
+			);
+			name = "PD RebalanceTests";
+			productName = "PD RebalanceTests";
+			productReference = 26FC9B04261A562F00B7E115 /* PD RebalanceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		26FC9B0E261A563000B7E115 /* PD RebalanceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26FC9B1E261A563000B7E115 /* Build configuration list for PBXNativeTarget "PD RebalanceUITests" */;
+			buildPhases = (
+				26FC9B0B261A563000B7E115 /* Sources */,
+				26FC9B0C261A563000B7E115 /* Frameworks */,
+				26FC9B0D261A563000B7E115 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26FC9B11261A563000B7E115 /* PBXTargetDependency */,
+			);
+			name = "PD RebalanceUITests";
+			productName = "PD RebalanceUITests";
+			productReference = 26FC9B0F261A563000B7E115 /* PD RebalanceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		26FC9AEA261A562E00B7E115 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					26FC9AF1261A562E00B7E115 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					26FC9B03261A562F00B7E115 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 26FC9AF1261A562E00B7E115;
+					};
+					26FC9B0E261A563000B7E115 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 26FC9AF1261A562E00B7E115;
+					};
+				};
+			};
+			buildConfigurationList = 26FC9AED261A562E00B7E115 /* Build configuration list for PBXProject "PD Rebalance" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 26FC9AE9261A562E00B7E115;
+			productRefGroup = 26FC9AF3261A562E00B7E115 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				26FC9AF1261A562E00B7E115 /* PD Rebalance */,
+				26FC9B03261A562F00B7E115 /* PD RebalanceTests */,
+				26FC9B0E261A563000B7E115 /* PD RebalanceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		26FC9AF0261A562E00B7E115 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26FC9AFD261A562F00B7E115 /* Preview Assets.xcassets in Resources */,
+				26FC9AFA261A562F00B7E115 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26FC9B02261A562F00B7E115 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26FC9B0D261A563000B7E115 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26FC9AEE261A562E00B7E115 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26FC9AF8261A562E00B7E115 /* ContentView.swift in Sources */,
+				26FC9AF6261A562E00B7E115 /* PD_RebalanceApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26FC9B00261A562F00B7E115 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26FC9B09261A562F00B7E115 /* PD_RebalanceTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26FC9B0B261A563000B7E115 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26FC9B14261A563000B7E115 /* PD_RebalanceUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		26FC9B06261A562F00B7E115 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26FC9AF1261A562E00B7E115 /* PD Rebalance */;
+			targetProxy = 26FC9B05261A562F00B7E115 /* PBXContainerItemProxy */;
+		};
+		26FC9B11261A563000B7E115 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26FC9AF1261A562E00B7E115 /* PD Rebalance */;
+			targetProxy = 26FC9B10261A563000B7E115 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		26FC9B16261A563000B7E115 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		26FC9B17261A563000B7E115 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		26FC9B19261A563000B7E115 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "PD Rebalance/PD_Rebalance.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"PD Rebalance/Preview Content\"";
+				DEVELOPMENT_TEAM = 53592T5727;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "PD Rebalance/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rabbithillsolutions.PD-Rebalance";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		26FC9B1A261A563000B7E115 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "PD Rebalance/PD_Rebalance.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"PD Rebalance/Preview Content\"";
+				DEVELOPMENT_TEAM = 53592T5727;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "PD Rebalance/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rabbithillsolutions.PD-Rebalance";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		26FC9B1C261A563000B7E115 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 53592T5727;
+				INFOPLIST_FILE = "PD RebalanceTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rabbithillsolutions.PD-RebalanceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PD Rebalance.app/Contents/MacOS/PD Rebalance";
+			};
+			name = Debug;
+		};
+		26FC9B1D261A563000B7E115 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 53592T5727;
+				INFOPLIST_FILE = "PD RebalanceTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rabbithillsolutions.PD-RebalanceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PD Rebalance.app/Contents/MacOS/PD Rebalance";
+			};
+			name = Release;
+		};
+		26FC9B1F261A563000B7E115 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 53592T5727;
+				INFOPLIST_FILE = "PD RebalanceUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rabbithillsolutions.PD-RebalanceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "PD Rebalance";
+			};
+			name = Debug;
+		};
+		26FC9B20261A563000B7E115 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 53592T5727;
+				INFOPLIST_FILE = "PD RebalanceUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rabbithillsolutions.PD-RebalanceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "PD Rebalance";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26FC9AED261A562E00B7E115 /* Build configuration list for PBXProject "PD Rebalance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26FC9B16261A563000B7E115 /* Debug */,
+				26FC9B17261A563000B7E115 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26FC9B18261A563000B7E115 /* Build configuration list for PBXNativeTarget "PD Rebalance" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26FC9B19261A563000B7E115 /* Debug */,
+				26FC9B1A261A563000B7E115 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26FC9B1B261A563000B7E115 /* Build configuration list for PBXNativeTarget "PD RebalanceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26FC9B1C261A563000B7E115 /* Debug */,
+				26FC9B1D261A563000B7E115 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26FC9B1E261A563000B7E115 /* Build configuration list for PBXNativeTarget "PD RebalanceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26FC9B1F261A563000B7E115 /* Debug */,
+				26FC9B20261A563000B7E115 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 26FC9AEA261A562E00B7E115 /* Project object */;
+}
