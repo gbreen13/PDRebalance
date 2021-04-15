@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		268C37C0261C9DBF00D7CFB3 /* WorkItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C37BF261C9DBF00D7CFB3 /* WorkItems.swift */; };
+		268C37D1261CA83900D7CFB3 /* GSWorkItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C37D0261CA83900D7CFB3 /* GSWorkItems.swift */; };
+		268C37E1261CB89B00D7CFB3 /* jsonTestFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C37E0261CB89B00D7CFB3 /* jsonTestFile.swift */; };
+		268C37E9261CE80800D7CFB3 /* WorkItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C37E8261CE80800D7CFB3 /* WorkItem.swift */; };
+		268C37EE261E138A00D7CFB3 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C37ED261E138A00D7CFB3 /* Team.swift */; };
+		268C37F3261E3C0F00D7CFB3 /* WorkItemTitles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C37F2261E3C0F00D7CFB3 /* WorkItemTitles.swift */; };
+		268C37F9261F429C00D7CFB3 /* WorkItemTitleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C37F8261F429C00D7CFB3 /* WorkItemTitleRow.swift */; };
+		268C3801261F54EA00D7CFB3 /* PriorityList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C3800261F54EA00D7CFB3 /* PriorityList.swift */; };
+		268C3806261FA30600D7CFB3 /* TeamList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C3805261FA30600D7CFB3 /* TeamList.swift */; };
+		268C380B261FA38900D7CFB3 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C380A261FA38900D7CFB3 /* MenuBar.swift */; };
+		268C38102620AFA700D7CFB3 /* TimeLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C380F2620AFA700D7CFB3 /* TimeLineView.swift */; };
+		268C3819262478F000D7CFB3 /* DetailPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C3818262478F000D7CFB3 /* DetailPanelView.swift */; };
+		268C381E26247BE100D7CFB3 /* WorkItemDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C381D26247BE100D7CFB3 /* WorkItemDetails.swift */; };
+		268C382F2624827700D7CFB3 /* WorkItemDetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C382E2624827700D7CFB3 /* WorkItemDetailRow.swift */; };
+		268C38422624A99000D7CFB3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C38412624A99000D7CFB3 /* Constants.swift */; };
+		268C38472624DC3500D7CFB3 /* TestUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C38462624DC3500D7CFB3 /* TestUI.swift */; };
+		268C384C2625CE0F00D7CFB3 /* WorkItemForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268C384B2625CE0F00D7CFB3 /* WorkItemForm.swift */; };
 		26FC9AF6261A562E00B7E115 /* PD_RebalanceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FC9AF5261A562E00B7E115 /* PD_RebalanceApp.swift */; };
 		26FC9AF8261A562E00B7E115 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FC9AF7261A562E00B7E115 /* ContentView.swift */; };
 		26FC9AFA261A562F00B7E115 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26FC9AF9261A562F00B7E115 /* Assets.xcassets */; };
@@ -33,6 +50,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		268C37BF261C9DBF00D7CFB3 /* WorkItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkItems.swift; sourceTree = "<group>"; };
+		268C37D0261CA83900D7CFB3 /* GSWorkItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GSWorkItems.swift; sourceTree = "<group>"; };
+		268C37E0261CB89B00D7CFB3 /* jsonTestFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = jsonTestFile.swift; sourceTree = "<group>"; };
+		268C37E8261CE80800D7CFB3 /* WorkItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkItem.swift; sourceTree = "<group>"; };
+		268C37ED261E138A00D7CFB3 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		268C37F2261E3C0F00D7CFB3 /* WorkItemTitles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkItemTitles.swift; sourceTree = "<group>"; };
+		268C37F8261F429C00D7CFB3 /* WorkItemTitleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkItemTitleRow.swift; sourceTree = "<group>"; };
+		268C3800261F54EA00D7CFB3 /* PriorityList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriorityList.swift; sourceTree = "<group>"; };
+		268C3805261FA30600D7CFB3 /* TeamList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamList.swift; sourceTree = "<group>"; };
+		268C380A261FA38900D7CFB3 /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
+		268C380F2620AFA700D7CFB3 /* TimeLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLineView.swift; sourceTree = "<group>"; };
+		268C3818262478F000D7CFB3 /* DetailPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPanelView.swift; sourceTree = "<group>"; };
+		268C381D26247BE100D7CFB3 /* WorkItemDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkItemDetails.swift; sourceTree = "<group>"; };
+		268C382E2624827700D7CFB3 /* WorkItemDetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkItemDetailRow.swift; sourceTree = "<group>"; };
+		268C38412624A99000D7CFB3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		268C38462624DC3500D7CFB3 /* TestUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUI.swift; sourceTree = "<group>"; };
+		268C384B2625CE0F00D7CFB3 /* WorkItemForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkItemForm.swift; sourceTree = "<group>"; };
 		26FC9AF2261A562E00B7E115 /* PD Rebalance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PD Rebalance.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		26FC9AF5261A562E00B7E115 /* PD_RebalanceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PD_RebalanceApp.swift; sourceTree = "<group>"; };
 		26FC9AF7261A562E00B7E115 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,6 +107,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		268C37BE261C9D9A00D7CFB3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				268C38412624A99000D7CFB3 /* Constants.swift */,
+				268C37E0261CB89B00D7CFB3 /* jsonTestFile.swift */,
+				268C37BF261C9DBF00D7CFB3 /* WorkItems.swift */,
+				268C37D0261CA83900D7CFB3 /* GSWorkItems.swift */,
+				268C37E8261CE80800D7CFB3 /* WorkItem.swift */,
+				268C37ED261E138A00D7CFB3 /* Team.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		268C37F7261F41EC00D7CFB3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				268C3818262478F000D7CFB3 /* DetailPanelView.swift */,
+				268C37F2261E3C0F00D7CFB3 /* WorkItemTitles.swift */,
+				268C38462624DC3500D7CFB3 /* TestUI.swift */,
+				268C37F8261F429C00D7CFB3 /* WorkItemTitleRow.swift */,
+				268C381D26247BE100D7CFB3 /* WorkItemDetails.swift */,
+				268C382E2624827700D7CFB3 /* WorkItemDetailRow.swift */,
+				268C3800261F54EA00D7CFB3 /* PriorityList.swift */,
+				268C380A261FA38900D7CFB3 /* MenuBar.swift */,
+				268C3805261FA30600D7CFB3 /* TeamList.swift */,
+				268C380F2620AFA700D7CFB3 /* TimeLineView.swift */,
+				268C384B2625CE0F00D7CFB3 /* WorkItemForm.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		26FC9AE9261A562E00B7E115 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +164,8 @@
 				26FC9AF5261A562E00B7E115 /* PD_RebalanceApp.swift */,
 				26FC9AF7261A562E00B7E115 /* ContentView.swift */,
 				26FC9AF9261A562F00B7E115 /* Assets.xcassets */,
+				268C37BE261C9D9A00D7CFB3 /* Model */,
+				268C37F7261F41EC00D7CFB3 /* Views */,
 				26FC9AFE261A562F00B7E115 /* Info.plist */,
 				26FC9AFF261A562F00B7E115 /* PD_Rebalance.entitlements */,
 				26FC9AFB261A562F00B7E115 /* Preview Content */,
@@ -199,6 +266,7 @@
 				TargetAttributes = {
 					26FC9AF1261A562E00B7E115 = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					26FC9B03261A562F00B7E115 = {
 						CreatedOnToolsVersion = 12.4;
@@ -261,8 +329,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				268C37F9261F429C00D7CFB3 /* WorkItemTitleRow.swift in Sources */,
+				268C384C2625CE0F00D7CFB3 /* WorkItemForm.swift in Sources */,
+				268C38422624A99000D7CFB3 /* Constants.swift in Sources */,
 				26FC9AF8261A562E00B7E115 /* ContentView.swift in Sources */,
+				268C380B261FA38900D7CFB3 /* MenuBar.swift in Sources */,
+				268C37D1261CA83900D7CFB3 /* GSWorkItems.swift in Sources */,
+				268C3806261FA30600D7CFB3 /* TeamList.swift in Sources */,
+				268C37EE261E138A00D7CFB3 /* Team.swift in Sources */,
+				268C38472624DC3500D7CFB3 /* TestUI.swift in Sources */,
+				268C37F3261E3C0F00D7CFB3 /* WorkItemTitles.swift in Sources */,
+				268C38102620AFA700D7CFB3 /* TimeLineView.swift in Sources */,
+				268C3801261F54EA00D7CFB3 /* PriorityList.swift in Sources */,
+				268C37E1261CB89B00D7CFB3 /* jsonTestFile.swift in Sources */,
+				268C37C0261C9DBF00D7CFB3 /* WorkItems.swift in Sources */,
 				26FC9AF6261A562E00B7E115 /* PD_RebalanceApp.swift in Sources */,
+				268C3819262478F000D7CFB3 /* DetailPanelView.swift in Sources */,
+				268C37E9261CE80800D7CFB3 /* WorkItem.swift in Sources */,
+				268C381E26247BE100D7CFB3 /* WorkItemDetails.swift in Sources */,
+				268C382F2624827700D7CFB3 /* WorkItemDetailRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,6 +503,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "PD Rebalance/PD_Rebalance.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -433,6 +519,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rabbithillsolutions.PD-Rebalance";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -442,6 +529,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = "PD Rebalance/PD_Rebalance.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
