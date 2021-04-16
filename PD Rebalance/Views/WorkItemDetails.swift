@@ -28,10 +28,11 @@ struct WorkItemDetails: View {
     @EnvironmentObject private var work:WorkItems
     
     var body: some View {
-        ScrollViewReader { proxy in
-            ScrollView([.horizontal, .vertical]) {
-                TimeLineView()
-                WorkGantt()
+        ScrollView([.horizontal, .vertical]) {
+            LazyVStack(spacing: 10, pinnedViews: [.sectionHeaders]) {
+                Section(header: TimeLineView()) {
+                    WorkGantt()
+                }
             }
         }
     }
