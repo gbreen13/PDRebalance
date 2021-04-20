@@ -9,17 +9,13 @@ import SwiftUI
 
 struct DetailPanelView: View {
     var body: some View {
-       VStack {
-            ScrollViewReader { proxy in
-                HSplitView {
-                    WorkItemTitles()
-                        .frame(width: 240)
-                    WorkItemDetails()
-                }
+        VStack {
+            HStack {
+                WorkItemTitles().frame(width:240)
+                WorkItemDetails()
             }
-//            Text("Bottom Part")
-            TestUI()
-                .frame(height:CGFloat(Constants.WorkLoadViewHeight))
+            Text("Bottom Part")
+                .frame(height:150)
         }
     }
 }

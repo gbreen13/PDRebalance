@@ -28,12 +28,20 @@ struct WorkItemDetails: View {
     @EnvironmentObject private var work:WorkItems
     
     var body: some View {
-        ScrollView([.horizontal, .vertical]) {
-            LazyVStack(spacing: 10, pinnedViews: [.sectionHeaders]) {
-                Section(header: TimeLineView()) {
-                    WorkGantt()
+        ScrollViewReader() { proxy in
+            ScrollView([.horizontal, .vertical]) {
+                LazyVStack(spacing: 10, pinnedViews: [.sectionHeaders]) {
+                    Section(header: TimeLineView()) {
+                        WorkGantt()
+                    }
                 }
             }
+            .onChange(of: work.topLeftLine) { value in
+                withAnimation {
+                    proxy.scrollTo(value+1, anchor: .topLeading)
+                }
+            }
+
         }
     }
 }
