@@ -11,7 +11,7 @@ struct DetailPanelView: View {
     var body: some View {
         VStack {
             HStack {
-                WorkItemTitles().frame(width:240)
+//                WorkItemTitles().frame(width:240)
                 WorkItemDetails()
             }
             Text("Bottom Part")

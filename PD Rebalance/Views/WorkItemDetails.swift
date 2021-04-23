@@ -7,17 +7,61 @@
 
 import SwiftUI
 
+struct WWGridLines: View {
+    @EnvironmentObject private var work:WorkItems
+    
+    var body: some View {
+        ForEach(0..<work.dates.count) { index in
+            Path { path in
+                path.move(to: CGPoint(x: Int(Constants.WorkWeekWidth) * index, y: 0))
+                path.addLine(to: CGPoint(x: Int(Constants.WorkWeekWidth) * index, y:Int(Constants.WorkLoadViewHeight) * work.all.count))
+            }
+            .stroke(Color.white, lineWidth: 1)
+        }
+    }
+}
+
 struct WorkGantt: View {
     @EnvironmentObject private var work:WorkItems
     
     var body: some View {
-        VStack(spacing:0) {
+        ZStack {
+            WWGridLines()
+            VStack(spacing:0) {
+                ForEach(0..<work.all.count) { index in
+                    let pc = work.priorityClass.first(where: {$0.name == work.all[index].priorityGroup})
+                    if pc != nil && pc!.isVisible {
+                        WorkItemDetailRow(item: work.all[index])
+                            .id(index)
+                            .border(Color.white)
+                    }
+                }
+            }
+        }
+    }
+}
+
+struct WorkItemTitleList: View {
+    @EnvironmentObject private var work:WorkItems
+
+    var body: some View {
+
+
+        VStack(alignment: .leading, spacing:0) {
+            Image(systemName: "plus.circle").frame(width: 40, height: 40)
             ForEach(0..<work.all.count) { index in
                 let pc = work.priorityClass.first(where: {$0.name == work.all[index].priorityGroup})
+                
                 if pc != nil && pc!.isVisible {
-                    WorkItemDetailRow(item: work.all[index])
-                        .id(index)
-                        .border(Color.white)
+                    Button(action: {
+                        work.inspectedIndex = index
+                    }) {
+                        VStack(spacing:0) {
+                            WorkItemTitleRow(item: work.all[index], bgshade: (index % 2 == 0))
+                            
+                        }
+                    }.buttonStyle(PlainButtonStyle())
+                    
                 }
             }
         }
@@ -30,9 +74,13 @@ struct WorkItemDetails: View {
     var body: some View {
         ScrollViewReader() { proxy in
             ScrollView([.horizontal, .vertical]) {
-                LazyVStack(spacing: 10, pinnedViews: [.sectionHeaders]) {
-                    Section(header: TimeLineView()) {
-                        WorkGantt()
+                HStack(alignment: .top) {
+                    WorkItemTitleList()
+                        .frame(width:240, alignment: .top)
+                    LazyVStack(spacing: 10, pinnedViews: [.sectionHeaders]) {
+                        Section(header: TimeLineView()) {
+                            WorkGantt()
+                        }
                     }
                 }
             }

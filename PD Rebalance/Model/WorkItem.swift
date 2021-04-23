@@ -91,6 +91,11 @@ class WorkItem: Identifiable, ObservableObject {
             self.init()
         }
     }
+    
+    func adjustWWOffset(offset: Int) {
+        startDate = Calendar.current.date(byAdding: .weekOfYear, value: offset, to: startDate)!
+        endDate = Calendar.current.date(byAdding: .weekOfYear, value: offset, to: endDate)!
+   }
 
 
 }

@@ -11,6 +11,9 @@ struct WorkItemDetailRow: View {
     var item: WorkItem
     @EnvironmentObject private var work:WorkItems
 
+    @State private var offset = CGSize(width: 0, height:20)
+    @State private var opac = 1.0
+    
     var body: some View {
             ZStack {
                 Rectangle()
@@ -22,8 +25,24 @@ struct WorkItemDetailRow: View {
                     RoundedRectangle(cornerRadius: 20.00, style: .circular)
                         .frame(width: CGFloat(x2-x1), height: 16)
                         .foregroundColor(.green)
+                        .opacity(self.opac)
                         .position(x:CGFloat((x1)+(x2-x1)/2))
-                        .offset(y:20)
+                        .offset(x: self.offset.width, y: 20)
+                        .gesture(
+                            DragGesture()
+                                .onChanged { gesture in
+                                    self.offset = gesture.translation
+                                    self.offset.width = self.offset.width / Constants.WorkWeekWidth
+                                    self.offset.width = self.offset.width *  Constants.WorkWeekWidth
+                                    self.opac = 0.5
+                                }
+                                
+                                .onEnded { _ in
+                                    self.opac = 1.0
+                                    item.adjustWWOffset(offset:Int(offset.width/Constants.WorkWeekWidth) )
+                                    offset = CGSize(width: 0, height:20)
+                                }
+                        )
                 }.frame(height:Constants.GanttTaskHeight)
 
         }
