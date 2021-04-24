@@ -30,7 +30,8 @@ class WorkItem: Identifiable, ObservableObject {
     @Published private(set) var endDate: Date
     @Published private(set) var dueDate: Date?
     @Published private(set) var title: String
-    @Published private(set) var nominalManWeeks: Int
+    @Published private(set) var shortDescription: String
+    @Published private(set) var nominalManWeeks: Double
     @Published private(set) var children: [WorkItem]
     @Published private(set) var dependencies: [WorkItem]
     @Published private(set) var rank: Int = 0
@@ -48,17 +49,17 @@ class WorkItem: Identifiable, ObservableObject {
         } else {
             sd = dateFormatter.date(from: gsWI.startDate!)!
         }
-        self.nominalManWeeks = gsWI.size ?? 0
+        self.nominalManWeeks = gsWI.size ?? 0.0
         if gsWI.dueDate == nil {
             self.dueDate = nil      // no Due Date.
         } else {
             self.dueDate = dateFormatter.date(from: gsWI.dueDate!)!
         }
 
-        if gsWI.completeDate == nil {
+        if gsWI.endDate == nil {
             self.endDate = Calendar.current.date(byAdding: .weekOfYear, value: 1, to: sd)!
         }else {
-            self.endDate = dateFormatter.date(from: gsWI.completeDate!)!
+            self.endDate = dateFormatter.date(from: gsWI.endDate!)!
         }
         self.inProgress = true
         if gsWI.inProgress != nil {
@@ -66,6 +67,8 @@ class WorkItem: Identifiable, ObservableObject {
                 self.inProgress = true
             }
         }
+        
+        self.shortDescription = gsWI.shortDescription ?? (gsWI.name ?? "Not Defined")
         self.children = []
         self.dependencies = []
         self.startDate = sd

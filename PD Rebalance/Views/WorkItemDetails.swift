@@ -31,7 +31,7 @@ struct WorkGantt: View {
                 ForEach(0..<work.all.count) { index in
                     let pc = work.priorityClass.first(where: {$0.name == work.all[index].priorityGroup})
                     if pc != nil && pc!.isVisible {
-                        WorkItemDetailRow(item: work.all[index])
+                        WorkItemDetailRow(index:index)
                             .id(index)
                             .border(Color.white)
                     }
@@ -41,32 +41,7 @@ struct WorkGantt: View {
     }
 }
 
-struct WorkItemTitleList: View {
-    @EnvironmentObject private var work:WorkItems
 
-    var body: some View {
-
-
-        VStack(alignment: .leading, spacing:0) {
-            Image(systemName: "plus.circle").frame(width: 40, height: 40)
-            ForEach(0..<work.all.count) { index in
-                let pc = work.priorityClass.first(where: {$0.name == work.all[index].priorityGroup})
-                
-                if pc != nil && pc!.isVisible {
-                    Button(action: {
-                        work.inspectedIndex = index
-                    }) {
-                        VStack(spacing:0) {
-                            WorkItemTitleRow(item: work.all[index], bgshade: (index % 2 == 0))
-                            
-                        }
-                    }.buttonStyle(PlainButtonStyle())
-                    
-                }
-            }
-        }
-    }
-}
 
 struct WorkItemDetails: View {
     @EnvironmentObject private var work:WorkItems

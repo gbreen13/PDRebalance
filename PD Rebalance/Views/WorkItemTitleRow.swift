@@ -18,7 +18,7 @@ struct WorkItemTitleRow: View {
                 Circle()
                     .fill(colorMap[item.priorityGroup]!)
                     .frame(width: 14, height: 14)
-                Text(item.title)
+                Text(item.shortDescription)
                     .frame(width: 200, height:30)
             }.frame(width: 240, height:Constants.GanttTaskHeight)
             .background(getBgColor(item: item, sh: bgshade))
