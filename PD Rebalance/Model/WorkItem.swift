@@ -18,9 +18,25 @@ struct Emp {
     var name: String    // maybe
 }
 
-struct Effort {
-    var role: Role
-    var manDays: Double
+struct workEffort: Identifiable {
+    var id:Int
+    var team: Team
+    var startDate: Date
+    var endDate: Date
+    var manWeeks: Double
+    var calWeeks: Int
+}
+
+extension workEffort {
+    
+    init?(for id: Team.ID, sd: Date, ed: Date, mw: Double, cw: Int) {
+        self.team = Team(for: id)!
+        self.id = self.team.getIndex()
+        self.startDate = sd
+        self.endDate = ed
+        self.manWeeks = mw
+        self.calWeeks = cw;
+    }
 }
 
 
@@ -32,6 +48,7 @@ class WorkItem: Identifiable, ObservableObject {
     @Published private(set) var title: String
     @Published private(set) var shortDescription: String
     @Published private(set) var nominalManWeeks: Double
+    @Published private(set) var workEfforts: [workEffort] = []
     @Published private(set) var children: [WorkItem]
     @Published private(set) var dependencies: [WorkItem]
     @Published private(set) var rank: Int = 0
@@ -78,8 +95,26 @@ class WorkItem: Identifiable, ObservableObject {
         } else {
             self.priorityGroup = "unprioritized"
         }
+        
+        if (gsWI.aaweeks != nil) && (gsWI.aaweeks! > 0.0) {
+            self.workEfforts.append(workEffort(for: "aa", sd: startDate,
+                                               ed: Calendar.current.date(byAdding: .weekOfYear, value: gsWI.aaduration!, to: startDate)!, mw: gsWI.aaweeks!, cw:gsWI.aaduration!)!)
+        }
+        if (gsWI.afweeks != nil) && (gsWI.afweeks! > 0.0) {
+            self.workEfforts.append(workEffort(for: "af", sd: startDate,
+                                               ed: Calendar.current.date(byAdding: .weekOfYear, value: gsWI.afduration!, to: startDate)!, mw: gsWI.afweeks!, cw:gsWI.afduration!)!)
+        }
+        if (gsWI.daweeks != nil) && (gsWI.daweeks! > 0.0) {
+            self.workEfforts.append(workEffort(for: "da", sd: startDate,
+                                               ed: Calendar.current.date(byAdding: .weekOfYear, value: gsWI.daduration!, to: startDate)!, mw: gsWI.daweeks!, cw:gsWI.daduration!)!)
+        }
+        if (gsWI.tsweeks != nil) && (gsWI.tsweeks! > 0.0) {
+            self.workEfforts.append(workEffort(for: "ts", sd: startDate,
+                                               ed: Calendar.current.date(byAdding: .weekOfYear, value: gsWI.tsduration!, to: startDate)!, mw: gsWI.tsweeks!, cw:gsWI.tsduration!)!)
+        }
     }
 
+    
     convenience init() {
         let decoder = JSONDecoder()
         let jsonData = def

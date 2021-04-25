@@ -46,7 +46,7 @@ struct GSWorkItem: Codable {
     var endDate: String?
     var dueDate: String?
     var inProgress: String? = "no"
-    var aaweeks: Double? = 0.0       // weeks are float, durations are integer weeks
+    var aaweeks: Double? = 0.0       // weeks represents man weeka and are float, durations timelines in calendar weeks.  7 man weeks in 1 week duration requires 7 people
     var aaduration: Int? = 0
     var afweeks: Double? = 0.0
     var afduration: Int? = 0
