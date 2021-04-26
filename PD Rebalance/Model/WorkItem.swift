@@ -20,20 +20,17 @@ struct Emp {
 
 struct workEffort: Identifiable {
     var id:Int
-    var team: Team
-    var startDate: Date
-    var endDate: Date
+    var weekOffset: Int     // which week to start effort from start of project
     var manWeeks: Double
     var calWeeks: Int
 }
 
 extension workEffort {
     
-    init?(for id: Team.ID, sd: Date, ed: Date, mw: Double, cw: Int) {
-        self.team = Team(for: id)!
-        self.id = self.team.getIndex()
-        self.startDate = sd
-        self.endDate = ed
+    init?(for id: Team.ID, sw: Int, mw: Double, cw: Int) {
+//        self.id = Team(getIndex(id: id))
+        self.id = Team.all[0].getIndex(id: id)
+        self.weekOffset = sw
         self.manWeeks = mw
         self.calWeeks = cw;
     }
@@ -97,20 +94,28 @@ class WorkItem: Identifiable, ObservableObject {
         }
         
         if (gsWI.aaweeks != nil) && (gsWI.aaweeks! > 0.0) {
-            self.workEfforts.append(workEffort(for: "aa", sd: startDate,
-                                               ed: Calendar.current.date(byAdding: .weekOfYear, value: gsWI.aaduration!, to: startDate)!, mw: gsWI.aaweeks!, cw:gsWI.aaduration!)!)
+            self.workEfforts.append(workEffort(for: "aa", sw:0, mw: gsWI.aaweeks!, cw:gsWI.aaduration!)!)
         }
         if (gsWI.afweeks != nil) && (gsWI.afweeks! > 0.0) {
-            self.workEfforts.append(workEffort(for: "af", sd: startDate,
-                                               ed: Calendar.current.date(byAdding: .weekOfYear, value: gsWI.afduration!, to: startDate)!, mw: gsWI.afweeks!, cw:gsWI.afduration!)!)
+            self.workEfforts.append(workEffort(for: "af", sw:0, mw: gsWI.afweeks!, cw:gsWI.afduration!)!)
         }
         if (gsWI.daweeks != nil) && (gsWI.daweeks! > 0.0) {
-            self.workEfforts.append(workEffort(for: "da", sd: startDate,
-                                               ed: Calendar.current.date(byAdding: .weekOfYear, value: gsWI.daduration!, to: startDate)!, mw: gsWI.daweeks!, cw:gsWI.daduration!)!)
+            self.workEfforts.append(workEffort(for: "da", sw:0, mw: gsWI.daweeks!, cw:gsWI.daduration!)!)
         }
         if (gsWI.tsweeks != nil) && (gsWI.tsweeks! > 0.0) {
-            self.workEfforts.append(workEffort(for: "ts", sd: startDate,
-                                               ed: Calendar.current.date(byAdding: .weekOfYear, value: gsWI.tsduration!, to: startDate)!, mw: gsWI.tsweeks!, cw:gsWI.tsduration!)!)
+            self.workEfforts.append(workEffort(for: "ts", sw:0, mw: gsWI.tsweeks!, cw:gsWI.tsduration!)!)
+        }
+        if (gsWI.systestweeks != nil) && (gsWI.systestweeks! > 0.0) {
+            self.workEfforts.append(workEffort(for: "systest", sw:0, mw: gsWI.systestweeks!, cw:Int(gsWI.systestweeks!))!)
+        }
+        if (gsWI.opsweeks != nil) && (gsWI.opsweeks! > 0.0) {
+            self.workEfforts.append(workEffort(for: "ops", sw:0, mw: gsWI.opsweeks!, cw:Int(gsWI.opsweeks!))!)
+        }
+        if (gsWI.csweeks != nil) && (gsWI.csweeks! > 0.0) {
+            self.workEfforts.append(workEffort(for: "cs", sw:0, mw: gsWI.csweeks!, cw:Int(gsWI.csweeks!))!)
+        }
+        if (gsWI.secweeks != nil) && (gsWI.secweeks! > 0.0) {
+            self.workEfforts.append(workEffort(for: "sec", sw:0, mw: gsWI.secweeks!, cw:Int(gsWI.secweeks!))!)
         }
     }
 

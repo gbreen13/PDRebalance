@@ -33,7 +33,7 @@ struct WorkGantt: View {
                     if pc != nil && pc!.isVisible {
                         WorkItemDetailRow(index:index)
                             .id(index)
-                            .border(Color.white)
+ //                           .border(Color.white)
                     }
                 }
             }

@@ -39,10 +39,19 @@ extension Team {
     
     static let allIDs: [Team.ID] = all.map { $0.id }
     
-    func getIndex()->Int {
+    func getIndex()->Int {  // where is this Team in 'all'
         var i = 0
         for t in Team.all {
             if t.id == self.id {return i}
+            i += 1
+        }
+        return 0
+    }
+    
+    func getIndex(id: Team.ID)->Int {   // pass a string, get the index in 'all' for that team
+        var i = 0
+        for t in Team.all {
+            if t.id == id {return i}
             i += 1
         }
         return 0

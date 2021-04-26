@@ -23,6 +23,7 @@ struct TeamList: View {
                         Text(team.title)
                     }
                     .frame(width:120, alignment: .leading)
+                    .foregroundColor(team.isVisible ? team.color : .gray)
                 }
             }
         }
