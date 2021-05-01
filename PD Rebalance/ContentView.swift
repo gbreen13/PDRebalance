@@ -32,7 +32,7 @@ struct ContentView: View {
             }
             HSplitView {
                 DetailPanelView()
-                WorkItemForm(item:work.all[0])
+                WorkItemForm(we: work.all[work.inspectedIndex])
                     .frame(maxWidth: 360, maxHeight: .infinity, alignment: .center)
             }
             .toolbar {

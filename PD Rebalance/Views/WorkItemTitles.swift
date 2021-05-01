@@ -37,6 +37,7 @@ struct WorkItemTitleList: View {
 //        work.move(fromOffsets: source, toOffset: destination)
     }
 }
+
 struct WorkItemTitles_Previews: PreviewProvider {
     static var previews: some View {
         ForEach([ColorScheme.light, .dark], id: \.self) { scheme in
